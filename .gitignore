@@ -1,0 +1,29 @@
+# === Dependencies ===
+node_modules/
+
+# === Lock files ===
+package-lock.json
+bun.lock
+yarn.lock
+pnpm-lock.yaml
+
+# === Secrets & local config ===
+
+# === Runtime state (contexts, references, session data) ===
+get-shit-done/
+
+# === Install manifests (auto-generated, machine-specific) ===
+gsd-file-manifest.json
+gsd-install-state.json
+
+# === OS junk ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
