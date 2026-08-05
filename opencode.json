@@ -38,14 +38,6 @@
     "docs-mcp-server": {
       "type": "remote",
       "url": "http://100.122.184.37:6280/mcp"
-    },
-    "exa": {
-      "type": "remote",
-      "url": "https://mcp.exa.ai/mcp",
-      "headers": {
-        "EXA_API_KEY": "{env:9d9d4d2b-be65-4322-b024-9abea0603333}"
-      },
-      "enabled": true
     }
   },
     "agent": {
