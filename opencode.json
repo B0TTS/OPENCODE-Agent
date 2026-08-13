@@ -34,13 +34,13 @@
         "CONTEXT7_API_KEY": "{env:ctx7sk-9180561a-c00d-492f-b236-91b1df924083}"
       },
       "enabled": true
-    },
-    "docs-mcp-server": {
-      "type": "remote",
-      "url": "http://100.122.184.37:6280/mcp"
     }
   },
     "agent": {
+        "b0tts-researcher": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
         "general": {
         "model": "deepseek/deepseek-v4-pro",
         "reasoningEffort": "max"
