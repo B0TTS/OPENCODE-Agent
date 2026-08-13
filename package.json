@@ -1,5 +1,9 @@
 {
   "dependencies": {
+<<<<<<< HEAD
+    "@opencode-ai/plugin": "1.18.9"
+=======
     "@opencode-ai/plugin": "1.17.15"
+>>>>>>> f634f413a57ef4a7f732ee5948b24df98b9771a3
   }
 }
