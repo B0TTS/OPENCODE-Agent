@@ -3,6 +3,7 @@
   "plugin": [
     "opencode-metasearch2"
   ],
+  "subagent_depth": 3,
   "permission": {
     "read": {
       "C:/Users/Jonah/DevelopmentTemplate/.opencode/get-shit-done/*": "allow"
@@ -38,16 +39,32 @@
   },
     "agent": {
         "b0tts-researcher": {
+          "model": "opencode-go/deepseek-v4-flash",
+          "reasoningEffort": "max"
+        },
+        "b0tts-smart-agent": {
+          "model": "opencode-go/ox-alpha-free",
+          "reasoningEffort": "max"
+        },
+        "b0tts-general-agent": {
+          "model": "opencode-go/deepseek-v4-flash",
+          "reasoningEffort": "max"
+        },
+        "b0tts-lead-researcher": {
+          "model": "opencode-go/muse-spark-1.2-contributor",
+          "reasoningEffort": "xhigh"
+        },
+        "general": {
+          "model": "opencode-go/deepseek-v4-flash",
+          "reasoningEffort": "max"
+        },
+        "explore": {
         "model": "opencode-go/deepseek-v4-flash",
         "reasoningEffort": "max"
         },
-        "general": {
-        "model": "deepseek/deepseek-v4-pro",
-        "reasoningEffort": "max"
-        },
         "gsd-roadmapper": {
-        "model": "deepseek/deepseek-v4-pro",
-        "reasoningEffort": "max"
+          "model": "deepseek/deepseek-v4-pro",
+          "reasoningEffort": "max"
         },
         "gsd-planner": {
         "model": "deepseek/deepseek-v4-pro",
@@ -181,10 +198,6 @@
         "gsd-doc-verifier": {
         "model": "opencode-go/deepseek-v4-flash",
         "reasoningEffort": "low"
-        },
-        "explore": {
-        "model": "opencode-go/deepseek-v4-flash",
-        "reasoningEffort": "max"
         }
     }
 }
