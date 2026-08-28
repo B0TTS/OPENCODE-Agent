@@ -39,24 +39,24 @@
   },
     "agent": {
         "b0tts-researcher": {
-          "model": "opencode-go/deepseek-v4-flash",
-          "reasoningEffort": "max"
+          "model": "opencode-go/muse-spark-1.2-contributor",
+          "reasoningEffort": "xhigh"
         },
         "b0tts-smart-agent": {
-          "model": "opencode-go/ox-alpha-free",
+          "model": "opencode-go/deepseek-v4-pro",
           "reasoningEffort": "max"
         },
         "b0tts-general-agent": {
-          "model": "opencode-go/deepseek-v4-flash",
-          "reasoningEffort": "max"
+          "model": "opencode-go/muse-spark-1.2-contributor",
+          "reasoningEffort": "xhigh"
         },
         "b0tts-lead-researcher": {
           "model": "opencode-go/muse-spark-1.2-contributor",
           "reasoningEffort": "xhigh"
         },
         "general": {
-          "model": "opencode-go/deepseek-v4-flash",
-          "reasoningEffort": "max"
+          "model": "opencode-go/muse-spark-1.2-contributor",
+          "reasoningEffort": "xhigh"
         },
         "explore": {
         "model": "opencode-go/deepseek-v4-flash",
