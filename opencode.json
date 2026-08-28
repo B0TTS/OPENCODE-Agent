@@ -35,6 +35,20 @@
         "CONTEXT7_API_KEY": "{env:ctx7sk-9180561a-c00d-492f-b236-91b1df924083}"
       },
       "enabled": true
+    },
+    "searxng": {
+      "type": "local",
+      "command": [
+        "cmd",
+        "/c",
+        "npx",
+        "-y",
+        "mcp-searxng"
+      ],
+      "environment": {
+        "SEARXNG_URL": "http://100.122.184.37:8082"
+      },
+      "enabled": true
     }
   },
     "agent": {
