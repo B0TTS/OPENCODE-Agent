@@ -3,6 +3,7 @@
   "plugin": [
     "opencode-metasearch2"
   ],
+  "subagent_depth": 3,
   "permission": {
     "read": {
       "C:/Users/Jonah/DevelopmentTemplate/.opencode/get-shit-done/*": "allow"
@@ -37,145 +38,166 @@
     }
   },
     "agent": {
-        "gsd-roadmapper": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
+        "b0tts-researcher": {
+          "model": "opencode-go/muse-spark-1.2-contributor",
+          "reasoningEffort": "xhigh"
         },
-        "gsd-planner": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
+        "b0tts-smart-agent": {
+          "model": "opencode-go/deepseek-v4-pro",
+          "reasoningEffort": "max"
         },
-        "gsd-plan-checker": {
-            "model": "opencode-go/deepseek-v4-pro",
-            "reasoning": "max"
+        "b0tts-general-agent": {
+          "model": "opencode-go/muse-spark-1.2-contributor",
+          "reasoningEffort": "xhigh"
         },
-        "gsd-code-reviewer": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
-        },
-        "gsd-verifier": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
-        },
-        "gsd-debugger": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
-        },
-        "gsd-eval-planner": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
-        },
-        "gsd-executor": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
-        },
-        "gsd-phase-researcher": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
-        },
-        "gsd-project-researcher": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
-        },
-        "gsd-code-fixer": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
-        },
-        "gsd-nyquist-auditor": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
-        },
-        "gsd-eval-auditor": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
-        },
-        "gsd-integration-checker": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
-        },
-        "gsd-security-auditor": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
-        },
-        "gsd-pattern-mapper": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
-        },
-        "gsd-doc-synthesizer": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
-        },
-        "gsd-research-synthesizer": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
-        },
-        "gsd-codebase-mapper": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
-        },
-        "gsd-ui-researcher": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
-        },
-        "gsd-ui-auditor": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
-        },
-        "gsd-doc-classifier": {
-            "model": "deepseek/deepseek-v4-flash",
-            "reasoning": "high"
-        },
-        "gsd-doc-verifier": {
-            "model": "deepseek/deepseek-v4-flash",
-            "reasoning": "high"
-        },
-        "gsd-assumptions-analyzer": {
-            "model": "opencode-go/deepseek-v4-flash",
-            "reasoning": "high"
-        },
-        "gsd-advisor-researcher": {
-            "model": "opencode-go/deepseek-v4-flash",
-            "reasoning": "high"
-        },
-        "gsd-framework-selector": {
-            "model": "opencode-go/deepseek-v4-flash",
-            "reasoning": "high"
-        },
-        "gsd-user-profiler": {
-            "model": "opencode-go/deepseek-v4-flash",
-            "reasoning": "high"
-        },
-        "gsd-ai-researcher": {
-            "model": "opencode-go/deepseek-v4-flash",
-            "reasoning": "high"
-        },
-        "gsd-domain-researcher": {
-            "model": "opencode-go/deepseek-v4-flash",
-            "reasoning": "high"
-        },
-        "gsd-doc-writer": {
-            "model": "opencode-go/deepseek-v4-flash",
-            "reasoning": "high"
-        },
-        "gsd-ui-checker": {
-            "model": "opencode-go/deepseek-v4-flash",
-            "reasoning": "high"
-        },
-        "gsd-debug-session-manager": {
-            "model": "opencode-go/deepseek-v4-flash",
-            "reasoning": "high"
-        },
-        "gsd-intel-updater": {
-            "model": "opencode-go/deepseek-v4-flash",
-            "reasoning": "high"
-        },
-        "explore": {
-            "model": "opencode-go/deepseek-v4-flash",
-            "reasoning": "high"
+        "b0tts-lead-researcher": {
+          "model": "opencode-go/muse-spark-1.2-contributor",
+          "reasoningEffort": "xhigh"
         },
         "general": {
-            "model": "xiaomi-token-plan-sgp/mimo-v2.5-pro",
-            "reasoning": "high"
+          "model": "opencode-go/muse-spark-1.2-contributor",
+          "reasoningEffort": "xhigh"
+        },
+        "explore": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-roadmapper": {
+          "model": "deepseek/deepseek-v4-pro",
+          "reasoningEffort": "max"
+        },
+        "gsd-planner": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-plan-checker": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-code-reviewer": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-verifier": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-debugger": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-eval-planner": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-eval-auditor": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-integration-checker": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-security-auditor": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-phase-researcher": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-project-researcher": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-doc-synthesizer": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-ui-auditor": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        
+        "gsd-debug-session-manager": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-nyquist-auditor": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-executor": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-code-fixer": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-pattern-mapper": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-research-synthesizer": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-codebase-mapper": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-ui-researcher": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+            "gsd-assumptions-analyzer": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-advisor-researcher": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-framework-selector": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-user-profiler": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-ai-researcher": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-domain-researcher": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-doc-writer": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-ui-checker": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-intel-updater": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-mempalace-curator": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-doc-classifier": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "low"
+        },
+        "gsd-doc-verifier": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "low"
         }
     }
 }
