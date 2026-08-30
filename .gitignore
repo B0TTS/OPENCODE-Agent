@@ -13,10 +13,7 @@ pnpm-lock.yaml
 get-shit-done/
 <<<<<<< HEAD
 package.json
-=======
-agents
 command
->>>>>>> f634f413a57ef4a7f732ee5948b24df98b9771a3
 
 # === Install manifests (auto-generated, machine-specific) ===
 gsd-file-manifest.json
