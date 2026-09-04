@@ -3,6 +3,15 @@
   "plugin": [
     "opencode-metasearch2"
   ],
+  "subagent_depth": 3,
+  "permission": {
+    "read": {
+      "C:/Users/Jonah/DevelopmentTemplate/.opencode/get-shit-done/*": "allow"
+    },
+    "external_directory": {
+      "C:/Users/Jonah/DevelopmentTemplate/.opencode/get-shit-done/*": "allow"
+    }
+  },
   "provider": {
     "ollama": {
       "models": {
@@ -26,6 +35,183 @@
         "CONTEXT7_API_KEY": "{env:ctx7sk-9180561a-c00d-492f-b236-91b1df924083}"
       },
       "enabled": true
+    },
+    "searxng": {
+      "type": "local",
+      "command": [
+        "cmd",
+        "/c",
+        "npx",
+        "-y",
+        "mcp-searxng"
+      ],
+      "environment": {
+        "SEARXNG_URL": "http://100.122.184.37:8082"
+      },
+      "enabled": true
     }
-  }
+  },
+    "agent": {
+        "b0tts-researcher": {
+          "model": "opencode-go/muse-spark-1.2-contributor",
+          "reasoningEffort": "xhigh"
+        },
+        "b0tts-smart-agent": {
+          "model": "opencode-go/deepseek-v4-pro",
+          "reasoningEffort": "max"
+        },
+        "b0tts-general-agent": {
+          "model": "opencode-go/muse-spark-1.2-contributor",
+          "reasoningEffort": "xhigh"
+        },
+        "b0tts-lead-researcher": {
+          "model": "opencode-go/muse-spark-1.2-contributor",
+          "reasoningEffort": "xhigh"
+        },
+        "general": {
+          "model": "opencode-go/muse-spark-1.2-contributor",
+          "reasoningEffort": "xhigh"
+        },
+        "explore": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-roadmapper": {
+          "model": "deepseek/deepseek-v4-pro",
+          "reasoningEffort": "max"
+        },
+        "gsd-planner": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-plan-checker": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-code-reviewer": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-verifier": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-debugger": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-eval-planner": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-eval-auditor": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-integration-checker": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-security-auditor": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-phase-researcher": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-project-researcher": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-doc-synthesizer": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-ui-auditor": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        
+        "gsd-debug-session-manager": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-nyquist-auditor": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-executor": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-code-fixer": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "max"
+        },
+        "gsd-pattern-mapper": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-research-synthesizer": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-codebase-mapper": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-ui-researcher": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+            "gsd-assumptions-analyzer": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-advisor-researcher": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-framework-selector": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-user-profiler": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-ai-researcher": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-domain-researcher": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-doc-writer": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-ui-checker": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-intel-updater": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-mempalace-curator": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "medium"
+        },
+        "gsd-doc-classifier": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "low"
+        },
+        "gsd-doc-verifier": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "reasoningEffort": "low"
+        }
+    }
 }

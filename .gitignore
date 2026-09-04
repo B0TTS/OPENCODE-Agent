@@ -11,6 +11,9 @@ pnpm-lock.yaml
 
 # === Runtime state (contexts, references, session data) ===
 get-shit-done/
+<<<<<<< HEAD
+package.json
+command
 
 # === Install manifests (auto-generated, machine-specific) ===
 gsd-file-manifest.json
