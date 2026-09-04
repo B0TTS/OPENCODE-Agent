@@ -159,25 +159,6 @@ Run `ipconfig` on Windows to find your local IP.
 - `tmux attach -t main` — attach to session
 - `Ctrl+B, D` — detach (keeps session running)
 
-### GSD
-
-**1. Install GSD:**
-
-```
-npx @opengsd/gsd-core@latest
-```
-
-**2. Install GSD SDK globally**
-
-```
-npm install -g @gsd-build/sdk
-```
-
-**Note:** you can also just ask the model to do it, so you don't have to reinstall every session.
-
-**3. Configure model overrides** — paste into `.opencode/opencode.json` under `"agent"`.
-For other override strategies, see `C:\Users\Jonah\.config\opencode\Model Overrides\model-override-strategies.md`.
-
 ### opencode MCPs
 
 **1. Roblox Studio MCP** (read-only inspector) — browse the live place file from AI. Add to `.opencode/opencode.json`:
