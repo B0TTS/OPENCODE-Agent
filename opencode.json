@@ -35,6 +35,70 @@
         "CONTEXT7_API_KEY": "{env:ctx7sk-9180561a-c00d-492f-b236-91b1df924083}"
       },
       "enabled": true
+    },
+    "tavily": {
+      "type": "remote",
+      "url": "https://mcp.tavily.com/mcp/",
+      "oauth": false,
+      "headers": {
+        "Authorization": "Bearer {env:TAVILY_API_KEY}"
+      },
+      "enabled": true
+    },
+    "firecrawl": {
+      "type": "remote",
+      "url": "https://mcp.firecrawl.dev/v2/mcp",
+      "oauth": false,
+      "headers": {
+        "Authorization": "Bearer {env:FIRECRAWL_API_KEY}"
+      },
+      "enabled": true
+    },
+    "langsearch": {
+      "type": "local",
+      "command": ["cmd", "/c", "npx", "-y", "langsearch-mcp-server"],
+      "environment": {
+        "LANGSEARCH_API_KEY": "{env:LANGSEARCH_API_KEY}"
+      },
+      "timeout": 30000,
+      "enabled": true
+    },
+    "serper": {
+      "type": "local",
+      "command": ["cmd", "/c", "npx", "-y", "serper-search-mcp"],
+      "environment": {
+        "SERPER_API_KEY": "{env:SERPER_API_KEY}"
+      },
+      "timeout": 30000,
+      "enabled": true
+    },
+    "you": {
+      "type": "remote",
+      "url": "https://api.you.com/mcp",
+      "oauth": false,
+      "headers": {
+        "Authorization": "Bearer {env:YDC_API_KEY}"
+      },
+      "enabled": true
+    },
+    "you-free": {
+      "type": "remote",
+      "url": "https://api.you.com/mcp?profile=free",
+      "enabled": true
+    },
+    "you-finance": {
+      "type": "remote",
+      "url": "https://api.you.com/mcp?tools=you-finance",
+      "oauth": false,
+      "headers": {
+        "Authorization": "Bearer {env:YDC_API_KEY}"
+      },
+      "enabled": true
+    },
+    "you-docs": {
+      "type": "remote",
+      "url": "https://you.com/docs/_mcp/server",
+      "enabled": true
     }
   },
     "agent": {
